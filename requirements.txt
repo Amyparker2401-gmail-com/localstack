@@ -17,7 +17,7 @@ boto>=2.49.0
 boto3>=1.14.33                 #basic-lib
 botocore>=1.12.13
 cachetools>=3.1.1,<4.0.0
-cbor2>=5.2.0
+cbor2>=5.6.0
 coverage==4.5.4
 crontab>=0.22.6
 dnspython==1.16.0              #basic-lib
@@ -42,10 +42,12 @@ psutil>=5.4.8,<6.0.0
 pympler>=0.6
 pyopenssl==17.5.0
 python-coveralls>=2.9.1
-pyyaml>=3.13,<=5.1
+pyyaml>=5.4,<=5.1
 Quart>=0.6.15
 requests>=2.20.0               #basic-lib
 requests-aws4auth==0.9
 sasl>=0.2.1
 six>=1.12.0                    #basic-lib
 xmltodict>=0.11.0
+hypercorn>=0.16.0 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=2.3.8 # not directly required, pinned by Snyk to avoid a vulnerability

@@ -1,4 +1,4 @@
-FROM localstack/localstack
+FROM localstack/localstack:4.7.0
 
 RUN rm -rf localstack/infra/elasticsearch localstack/dashboard/web
 
